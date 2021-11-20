@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root {
+    --main-bg:hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --cyan: hsl(178, 100%, 50%);
+    --Soft-blue: hsl(215, 51%, 70%);
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    max-width: 100%;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.nft-card{
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    width: 432px;
+    height: auto;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.img{
+    margin-top: .5rem;
+   
+}
+
+.img img{
+    border-radius: 1rem;
+}
+
+h1{
+    color: white;
+}
+p{
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+
+span{
+    color: white;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    object-fit: contain;
+}
+.ether{
+    display: flex;
+    /* justify-content: space-between; */
+    object-fit: cover;
+    gap: 10px;
+}
+
+/* .ether img{
+    padding-right: 10px;
+} */
+h2{
+    color:hsl(178, 100%, 50%);
+    font-size: 1.2rem;
+}
+
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.time p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: -5px
+
+}
+
+/* .time img{
+    max-width: 100%;
+    height: auto;
+
+} */
+
+hr{
+    color: var(--Soft-blue);
+    border: .2px solid hsl(215, 51%, 70%);
+    width: 100%;
+
+}
+
+.creator{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.creator img{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    
+}
+/* i{
+    font-size: 18px;
+} */
+
+.avatar {
+    height: auto;
+    width: 40px;
+}
+
+.eth {
+    width: 20px;
+    margin-top: .8rem;
+    margin-bottom: .2rem;
+}
+
+.clock{
+    width: 30px;
+    /* justify-content: center; */
+    margin-right: 2px;
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+@media (min-width:480px) {
+    .nft-card {
+        width: 375px;
+        margin-top: 2rem;
+        /* margin-bottom: 2rem; */
+
+    }
+
+    .price{
+        margin-bottom: -1rem;
+    }
+    
+}
